@@ -592,10 +592,11 @@ footer{
   }
   body#fooldal, body#megjelenesek, body#krimi,
   body#romantikus, body#szereplok, body#szerzok {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-      background-attachment: scroll !important;
-      padding: 20px !important;
-    }
+    background: lightblue;
+    background-attachment: scroll !important;
+    padding: 20px !important;
+  }
 }
-}
+
+
 
