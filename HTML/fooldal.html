@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Books</title>
+    <link rel="stylesheet" href="../CSS/beadandocss.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../ikonok/favicon.png" type="image/png">
+</head>
+<body id="fooldal">
+    <header id="fooldal_header">
+        <h1> A könyvmolyok kedvenc oldala</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href=fooldal.html> Főoldal</a></li>
+            <li><a href=2025.html>2025-ös megjelenések</a></li>
+            <li><a href=krimi.html> Top 10 krimi/thriller könyv</a></li>
+            <li><a href=romantikus.html> Top 10 romantikus könyv</a></li>
+            <li><a href=szereplok.html> Top 5 szereplő</a></li>
+            <li><a href=szerzok.html> Top 5 szerző</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="wishlist">
+            <h2> Kívánságlista <img src="../ikonok/wishlist.png" alt="icon"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add hozzá a könyvet, amit el szeretnél olvasni">
+                <button id="gomb" onclick="addTask()">
+                    Add
+                </button>
+            </div>
+            <ul id="list-container">
+            </ul>
+        </div>
+    </div>
+     
+        <div class="main-container">
+            <h1 id="cim_fooldal">Könyv ajánlás beküldése</h1>
+            <p class="info">Töltsd ki az adatokat! A "Küldés" gomb után a httpbin.org jeleníti meg a szerverre érkezett adatokat.</p>
+            <form id="fullForm" method="POST">
+                <div class="form-group">
+                    <label for="nev">Teljes név:</label>
+                    <input type="text" id="nev" name="nev" placeholder="Pl. Kiss Anna">
+                    <div id="error-nev" class="error-msg"> </div>
+                </div>
+                <div class="form-group">
+                    <label for="szulinap">Születési dátum:</label>
+                    <input type="date" id="szulinap" name="szulinap">
+                    <div id="error-szulinap" class="error-msg"></div>
+                </div>
+
+                <div class="form-group">
+                    <label>Nem:</label>
+                    <input type="radio" id="female" name="gender" value="no" checked>
+                    <label for="female">Nő</label>
+                    <input type="radio" id="male" name="gender" value="ferfi">
+                    <label for="male">Férfi</label>
+                    <input type="radio" id="other" name="gender" value="egyeb">
+                    <label for="other">Egyéb</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="kategoria">Kategória:</label>
+                    <select id="kategoria" name="kategoria">
+                        <option value="">-- Válassz egyet --</option>
+                        <option value="Romantikus">Romantikus</option>
+                        <option value="Thriller">Krimi/Thriller</option>
+                        <option value="Thriller">Egyéb</option>
+                    </select>
+                    <div id="error-kategoria" class="error-msg"></div>
+                </div>
+                <div class="form-group">
+                    <label for="konyv">Könyv címe:</label>
+                    <input type="text" id="konyv" name="konyv" placeholder="Pl. Ragadozók háza">
+                    <div id="error-konyv" class="error-msg"></div>
+                </div>
+                <div class="form-group">
+                    <label for="szerzo">Szerző:</label>
+                    <input type="text" id="szerzo" name="szerzo" placeholder="Pl. Diana Hunt">
+                    <div id="error-szerzo" class="error-msg"></div>
+                </div>
+                <div class="form-group">
+                    <label for="indok"> Miért ajánlod a könyvet? </label>
+                    <textarea id="indok" name="indok" rows="4" placeholder="Írd le röviden, hogy miért ajánlod ezt a könyvet..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="szam">Hány könyvet olvastál idén?</label>
+                    <input type="number" id="szam" name="szam" min="1">
+                    <div id="error-szam" class="error-msg"></div>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="nevtelen" name="nevtelen">
+                    <label for="nevtelen">Szeretnék névtelen maradni</label>
+                    <div id="error-nevtelen" class="error-msg"></div>
+                </div>
+                
+                <button id="gomb0" type="submit">Űrlap Küldése</button>
+            </form>
+        </div>
+    <script src="../JS/beadandojs.js"></script>
+    <footer>
+    <p>
+        &copy; 2025 <strong>Készítette: Burján Réka</strong><br>
+        <small>Kedvenc könyveim, szerzőim, szereplőim</small>
+    </p>
+    </footer>
+</body>
+</html>
