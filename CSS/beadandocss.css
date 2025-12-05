@@ -590,13 +590,39 @@ footer{
         margin-top: 30px;
         border-radius: 0;
   }
-  body#fooldal, body#megjelenesek, body#krimi,
-  body#romantikus, body#szereplok, body#szerzok {
+  body#fooldal {
+    background: white;
+    background-attachment: scroll !important;
+    padding: 20px !important;
+  }
+  body#megjelenesek{
     background: lightblue;
+    background-attachment: scroll !important;
+    padding: 20px !important;
+  } 
+  
+  body#krimi{
+    background: gray;
+    background-attachment: scroll !important;
+    padding: 20px !important;
+  }
+  body#romantikus{
+    background: white;
+    background-attachment: scroll !important;
+    padding: 20px !important;
+  } 
+  body#szereplok{
+    background: gray;
+    background-attachment: scroll !important;
+    padding: 20px !important;
+  } 
+  body#szerzok{
+    background: gray;
     background-attachment: scroll !important;
     padding: 20px !important;
   }
 }
+
 
 
 
