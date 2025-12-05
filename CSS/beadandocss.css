@@ -591,12 +591,12 @@ footer{
         border-radius: 0;
   }
   body#fooldal {
-    background: white;
+    background: gray;
     background-attachment: scroll !important;
     padding: 20px !important;
   }
   body#megjelenesek{
-    background: lightblue;
+    background: gray;
     background-attachment: scroll !important;
     padding: 20px !important;
   } 
@@ -607,7 +607,7 @@ footer{
     padding: 20px !important;
   }
   body#romantikus{
-    background: white;
+    background: gray;
     background-attachment: scroll !important;
     padding: 20px !important;
   } 
@@ -622,6 +622,7 @@ footer{
     padding: 20px !important;
   }
 }
+
 
 
 
