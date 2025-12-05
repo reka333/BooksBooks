@@ -293,12 +293,9 @@ body#szerzok {
   flex-direction: column;
   text-align: left;
 }
-
-
 .leiras h1, .leiras h2{
   margin-top: 0;
 }
-
 .leiras ul {
     text-align: left;
     padding-left: 20px;  
@@ -622,6 +619,7 @@ footer{
     padding: 20px !important;
   }
 }
+
 
 
 
